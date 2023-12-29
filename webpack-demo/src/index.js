@@ -2,6 +2,13 @@ import _ from 'lodash';
 import printMe from './print.js';
 
 
+
+if (process.env.NODE_ENV !== 'production') {
+    console.log('Looks like we are in development mode!');
+} else {
+    console.log('production');
+}
+
 function component() {
     const element = document.createElement('div');
     const btn = document.createElement('button');
@@ -12,7 +19,7 @@ function component() {
     btn.onclick = printMe;
   
     element.appendChild(btn);
-    
+
     return element;
   }
   
