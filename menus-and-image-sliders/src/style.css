@@ -1,6 +1,75 @@
 /* style.css */
 
-:root, body, * {
+/* :root, body, * {
     margin: 0;
     padding: 0;
+} */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+
+
+
+
+
+
+#carousel-container {
+    width: 50%;
+    margin: auto;
+    overflow: hidden;
+    border: 2px solid red
+}
+
+#image-carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    border: 2px solid black;
+    
+}
+
+.carousel-image {
+    width: 100%;
+    border: 2px solid green;
+}
+
+.carousel-button {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+#prev-button {
+    left: 10px;
+}
+
+#next-button {
+    right: 10px;
 }
